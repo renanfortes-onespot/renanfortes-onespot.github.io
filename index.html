@@ -161,11 +161,11 @@
   .hub-label{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
   .hub-label i{width:5px;height:5px;border-radius:50%;background:var(--orange);flex:none;display:block}
   .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
-  .chip{display:flex;align-items:center;gap:9px;background:#10161E;border:1px solid var(--border);border-radius:9px;padding:8px 10px;transition:border-color .2s}
+  .chip{display:flex;align-items:center;gap:9px;background:#10161E;border:1px solid var(--border);border-radius:9px;padding:8px 10px;transition:border-color .2s;min-width:0}
   .chip:hover{border-color:rgba(241,143,47,.4)}
   .chip .ico-chip{width:27px;height:27px;border-radius:7px}
   .chip .ico-chip svg{width:14px;height:14px}
-  .chip h5{font-size:11.5px;font-weight:600;letter-spacing:-.005em;line-height:1.22;flex:1;min-width:0}
+  .chip h5{font-size:11.5px;font-weight:600;letter-spacing:-.005em;line-height:1.22;flex:1;min-width:0;overflow-wrap:break-word}
   .chip .st{width:6px;height:6px;border-radius:50%;background:var(--green);flex:none;box-shadow:0 0 0 2px rgba(46,189,107,.18)}
 
   /* ---------- ECOSYSTEM ---------- */
@@ -297,6 +297,7 @@
     .fca-arrow{transform:rotate(90deg);justify-content:center}
     .hero-actions{flex-direction:column;align-items:stretch}
     .hero-actions .btn{justify-content:center}
+    .hub-grid{grid-template-columns:1fr}
   }
   @media(prefers-reduced-motion:reduce){
     *{scroll-behavior:auto!important}
