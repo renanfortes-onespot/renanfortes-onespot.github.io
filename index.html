@@ -154,6 +154,22 @@
   .fca-meta b{color:var(--text);font-weight:600}
   .fic-note{font-family:var(--mono);font-size:10px;color:var(--muted);text-align:center;margin-top:14px;opacity:.7;letter-spacing:.05em}
 
+  /* ---------- hero hub (painel unico) ---------- */
+  .hub{padding:16px 16px 18px}
+  .hub-layer{margin-bottom:13px}
+  .hub-layer:last-child{margin-bottom:0}
+  .hub-label{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+  .hub-label i{width:5px;height:5px;border-radius:50%;background:var(--orange);flex:none;display:block}
+  .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .hub-card{background:#10161E;border:1px solid var(--border);border-radius:11px;padding:11px 12px;transition:border-color .2s}
+  .hub-card:hover{border-color:rgba(241,143,47,.4)}
+  .hc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+  .hub-card .ico-chip{width:32px;height:32px;border-radius:9px}
+  .hub-card .ico-chip svg{width:16px;height:16px}
+  .hub-card h5{font-size:12.5px;font-weight:600;letter-spacing:-.005em;line-height:1.25}
+  .hub-card .badge-green{font-size:8.5px;padding:3px 7px;letter-spacing:.1em}
+  .hub-card .badge-green .dot{width:5px;height:5px;box-shadow:0 0 0 2px rgba(46,189,107,.18)}
+
   /* ---------- ECOSYSTEM ---------- */
   .layers{display:grid;gap:22px;margin-top:48px}
   .layer{
@@ -328,52 +344,71 @@
     <div class="reveal" aria-hidden="true">
       <div class="panel">
         <div class="panel-top">
-          <span class="ttl">Scorecard · Unidade Centro-Oeste</span>
+          <span class="ttl">OneSpot · Painel único</span>
           <span class="dots"><i></i><i></i><i></i></span>
         </div>
-        <div class="kpis">
-          <div class="kpi ok">
-            <span class="lab">Atingimento</span>
-            <span class="val">98,4%</span>
-            <span class="delta">▲ no alvo</span>
-          </div>
-          <div class="kpi ok">
-            <span class="lab">ROIC</span>
-            <span class="val">14,2%</span>
-            <span class="delta">▲ +0,6 p.p.</span>
-          </div>
-          <div class="kpi alert">
-            <span class="lab">Custo / unidade</span>
-            <span class="val">R$ 41,80</span>
-            <span class="delta">▼ desvio −7,3%</span>
-          </div>
-        </div>
-        <div class="fca">
-          <div class="fca-head">
-            <span class="lbl">FCA aberto</span>
-            <span class="badge badge-red">Desvio</span>
-          </div>
-          <div class="fca-flow">
-            <div class="fca-step">
-              <span class="k">Fato</span>
-              <span class="v">Custo/unidade acima do orçado</span>
-            </div>
-            <div class="fca-arrow">→</div>
-            <div class="fca-step">
-              <span class="k">Causa</span>
-              <span class="v">Retrabalho no setup de linha</span>
-            </div>
-            <div class="fca-arrow">→</div>
-            <div class="fca-step">
-              <span class="k">Ação</span>
-              <span class="v">Padrão de setup revisado</span>
+        <div class="hub">
+
+          <div class="hub-layer">
+            <span class="hub-label"><i></i>Camada Estratégica</span>
+            <div class="hub-grid">
+              <div class="hub-card">
+                <div class="hc-top">
+                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></span>
+                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
+                </div>
+                <h5>Planejamento Estratégico</h5>
+              </div>
+              <div class="hub-card">
+                <div class="hc-top">
+                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h3M8 17h3"/><path d="M15 13l2 2 3-3"/></svg></span>
+                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
+                </div>
+                <h5>DRE &amp; FP&amp;A</h5>
+              </div>
             </div>
           </div>
-          <div class="fca-meta">
-            <span>Resp.: <b>J. Almeida</b></span>
-            <span>Prazo: <b>22/06</b></span>
-            <span>Rito: <b>Semanal</b></span>
+
+          <div class="hub-layer">
+            <span class="hub-label"><i></i>Camada Tática</span>
+            <div class="hub-grid">
+              <div class="hub-card">
+                <div class="hc-top">
+                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h4M7 13h4M7 17h2"/><path d="M15 8l1.6 1.6L20 6"/><path d="M15 14l1.6 1.6L20 12"/></svg></span>
+                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
+                </div>
+                <h5>Scorecard</h5>
+              </div>
+              <div class="hub-card">
+                <div class="hc-top">
+                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.3 3.5a2 2 0 0 1 3.4 0l7.4 12.8a2 2 0 0 1-1.7 3H4.6a2 2 0 0 1-1.7-3z"/><path d="M12 9v4M12 16.5v.01"/></svg></span>
+                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
+                </div>
+                <h5>Motor de FCA</h5>
+              </div>
+            </div>
           </div>
+
+          <div class="hub-layer">
+            <span class="hub-label"><i></i>Camada Operacional &amp; Pessoas</span>
+            <div class="hub-grid">
+              <div class="hub-card">
+                <div class="hc-top">
+                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4"/><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3"/></svg></span>
+                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
+                </div>
+                <h5>Reconhecimento</h5>
+              </div>
+              <div class="hub-card">
+                <div class="hc-top">
+                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 12h4M9 10v4M16 11v.01M19 13v.01"/></svg></span>
+                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
+                </div>
+                <h5>Gamificação</h5>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
