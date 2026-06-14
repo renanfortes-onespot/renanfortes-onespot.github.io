@@ -155,20 +155,18 @@
   .fic-note{font-family:var(--mono);font-size:10px;color:var(--muted);text-align:center;margin-top:14px;opacity:.7;letter-spacing:.05em}
 
   /* ---------- hero hub (painel unico) ---------- */
-  .hub{padding:16px 16px 18px}
-  .hub-layer{margin-bottom:13px}
+  .hub{padding:14px 14px 16px}
+  .hub-layer{margin-bottom:11px}
   .hub-layer:last-child{margin-bottom:0}
-  .hub-label{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+  .hub-label{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
   .hub-label i{width:5px;height:5px;border-radius:50%;background:var(--orange);flex:none;display:block}
-  .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-  .hub-card{background:#10161E;border:1px solid var(--border);border-radius:11px;padding:11px 12px;transition:border-color .2s}
-  .hub-card:hover{border-color:rgba(241,143,47,.4)}
-  .hc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
-  .hub-card .ico-chip{width:32px;height:32px;border-radius:9px}
-  .hub-card .ico-chip svg{width:16px;height:16px}
-  .hub-card h5{font-size:12.5px;font-weight:600;letter-spacing:-.005em;line-height:1.25}
-  .hub-card .badge-green{font-size:8.5px;padding:3px 7px;letter-spacing:.1em}
-  .hub-card .badge-green .dot{width:5px;height:5px;box-shadow:0 0 0 2px rgba(46,189,107,.18)}
+  .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+  .chip{display:flex;align-items:center;gap:9px;background:#10161E;border:1px solid var(--border);border-radius:9px;padding:8px 10px;transition:border-color .2s}
+  .chip:hover{border-color:rgba(241,143,47,.4)}
+  .chip .ico-chip{width:27px;height:27px;border-radius:7px}
+  .chip .ico-chip svg{width:14px;height:14px}
+  .chip h5{font-size:11.5px;font-weight:600;letter-spacing:-.005em;line-height:1.22;flex:1;min-width:0}
+  .chip .st{width:6px;height:6px;border-radius:50%;background:var(--green);flex:none;box-shadow:0 0 0 2px rgba(46,189,107,.18)}
 
   /* ---------- ECOSYSTEM ---------- */
   .layers{display:grid;gap:22px;margin-top:48px}
@@ -352,60 +350,31 @@
           <div class="hub-layer">
             <span class="hub-label"><i></i>Camada Estratégica</span>
             <div class="hub-grid">
-              <div class="hub-card">
-                <div class="hc-top">
-                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></span>
-                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
-                </div>
-                <h5>Planejamento Estratégico</h5>
-              </div>
-              <div class="hub-card">
-                <div class="hc-top">
-                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h3M8 17h3"/><path d="M15 13l2 2 3-3"/></svg></span>
-                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
-                </div>
-                <h5>DRE &amp; FP&amp;A</h5>
-              </div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></span><h5>Planejamento Estratégico</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span><h5>Indicadores-Chave</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4"/><circle cx="12" cy="9" r="2"/><path d="M12 11v3M6 21v-3a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3"/><circle cx="6" cy="21" r="1.5"/><circle cx="18" cy="21" r="1.5"/></svg></span><h5>Árvore de ROIC</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h3M8 17h3"/><path d="M15 13l2 2 3-3"/></svg></span><h5>DRE &amp; FP&amp;A</h5><span class="st"></span></div>
             </div>
           </div>
 
           <div class="hub-layer">
             <span class="hub-label"><i></i>Camada Tática</span>
             <div class="hub-grid">
-              <div class="hub-card">
-                <div class="hc-top">
-                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h4M7 13h4M7 17h2"/><path d="M15 8l1.6 1.6L20 6"/><path d="M15 14l1.6 1.6L20 12"/></svg></span>
-                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
-                </div>
-                <h5>Scorecard</h5>
-              </div>
-              <div class="hub-card">
-                <div class="hc-top">
-                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.3 3.5a2 2 0 0 1 3.4 0l7.4 12.8a2 2 0 0 1-1.7 3H4.6a2 2 0 0 1-1.7-3z"/><path d="M12 9v4M12 16.5v.01"/></svg></span>
-                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
-                </div>
-                <h5>Motor de FCA</h5>
-              </div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h4M7 13h4M7 17h2"/><path d="M15 8l1.6 1.6L20 6"/><path d="M15 14l1.6 1.6L20 12"/></svg></span><h5>Scorecard</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 2"/><path d="M21 3v5h-5"/></svg></span><h5>Gerenciamento da Rotina</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 13h3M8 17h3"/><circle cx="15.5" cy="15.5" r="2.5"/></svg></span><h5>Ritos de Gestão</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.3 3.5a2 2 0 0 1 3.4 0l7.4 12.8a2 2 0 0 1-1.7 3H4.6a2 2 0 0 1-1.7-3z"/><path d="M12 9v4M12 16.5v.01"/></svg></span><h5>FCAs</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span><h5>Padronização de Processos</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2" fill="var(--card)"/><circle cx="16" cy="12" r="2" fill="var(--card)"/><circle cx="10" cy="18" r="2" fill="var(--card)"/></svg></span><h5>Padronização de Indicadores</h5><span class="st"></span></div>
             </div>
           </div>
 
           <div class="hub-layer">
             <span class="hub-label"><i></i>Camada Operacional &amp; Pessoas</span>
             <div class="hub-grid">
-              <div class="hub-card">
-                <div class="hc-top">
-                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4"/><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3"/></svg></span>
-                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
-                </div>
-                <h5>Reconhecimento</h5>
-              </div>
-              <div class="hub-card">
-                <div class="hc-top">
-                  <span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 12h4M9 10v4M16 11v.01M19 13v.01"/></svg></span>
-                  <span class="badge badge-green"><span class="dot"></span>ATIVO</span>
-                </div>
-                <h5>Gamificação</h5>
-              </div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 21v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v1"/><path d="M17 9l2 2 3-4"/></svg></span><h5>Metas dos Colaboradores</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4"/><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3"/></svg></span><h5>Reconhecimento</h5><span class="st"></span></div>
+              <div class="chip"><span class="ico-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 12h4M9 10v4M16 11v.01M19 13v.01"/></svg></span><h5>Gamificação</h5><span class="st"></span></div>
             </div>
           </div>
 
